@@ -159,7 +159,7 @@ export namespace Util {
       const nums = matches.map((item) => parseInt(item.split('=')[1], 10))
       const min = Math.min(...nums)
       const max = Math.max(...nums)
-      for (let i = min; i <= max; i += 1) {
+      for (let i = min; i <= 50; i += 1) {
         // eslint-disable-next-line no-await-in-loop
         const { data } = await req(i)
         if (data) {
@@ -193,7 +193,7 @@ export namespace Util {
       const nums = matches.map((item) => parseInt(item.split('=')[1], 10))
       const min = Math.min(...nums)
       const max = Math.max(...nums)
-      for (let i = min; i <= max; i += 1) {
+      for (let i = min; i <= 20; i += 1) {
         // eslint-disable-next-line no-await-in-loop
         const { data } = await req(i)
         if (data) {
